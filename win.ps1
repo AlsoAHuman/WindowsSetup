@@ -3,7 +3,7 @@
     $LibrewolfURL = "https://gitlab.com/api/v4/projects/librewolf-community%2Fbrowser%2Fbsys5/releases"
 
   # Get the latest release information
-    $LibrewolfInfo = Invoke-RestMethod -Uri $LibrewolfURL -Method Get
+    $LibrewolfInfo = Invoke-RestMethod -Url $LibrewolfURL -Method Get
     $LatestReleaseLibrewolf = $LibrewolfInfo[0]
 
   # Get the download URL for the portable version
